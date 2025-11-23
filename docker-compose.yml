@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: sqli_lab
+    ports:
+      - "3307:3306"  # Avoid conflict with local MySQL
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d  # Auto-run init.sql
+
+  web:
+    build: .
+    restart: always
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+    volumes:
+      - ./app:/var/www/html
