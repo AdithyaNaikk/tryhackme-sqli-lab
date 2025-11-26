@@ -32,6 +32,8 @@ open http://localhost:8000
 
 - **[GUIDE.md](GUIDE.md)** - Complete challenge walkthrough with hints and verification
 - **[REPORT.md](REPORT.md)** - Detailed project report covering design, testing, and outcomes
+- **[VERIFICATION.md](VERIFICATION.md)** - Challenge-by-challenge exploitation verification
+- **[FIX_SUMMARY.md](FIX_SUMMARY.md)** - Code fixes and improvements documentation
 
 ## 🎓 Learning Objectives
 
